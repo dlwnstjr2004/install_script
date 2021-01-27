@@ -22,3 +22,6 @@ sudo service ssh restart
 echo "*** finish set!! ***"
 echo "*** check ssh!! ***"
 echo "\"ssh localhost\""
+
+echo "%sudo ALL=NOPASSWD: /usr/sbin/service"|sudo tee -a /etc/sudoers
+echo "\"C:\\\Windows\\System32\\bash.exe\" -c \"sudo service ssh start\""|sudo tee -a /mnt/c/Users/dlwns/AppData/Roaming/Microsoft/Windows/Start\ Menu/Programs/Startup/sshd.bat
