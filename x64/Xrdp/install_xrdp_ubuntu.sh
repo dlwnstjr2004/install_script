@@ -1,3 +1,6 @@
+#!/bin/bash
+# usage: sudo ./install_xrdp_ubuntu.sh
+
 sudo apt-get install -y xorg-video-abi-23
 sudo apt-get install -y xrdp
 sudo apt-get install -y xorgxrdp
