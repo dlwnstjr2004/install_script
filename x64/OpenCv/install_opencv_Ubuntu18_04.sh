@@ -74,7 +74,7 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 ##-- Generating done
 ##-- Build files have been written to: /home/webnautes/opencv/opencv-4.0.1/build
 
-time make -j4
+make -j`nproc`
 sudo make install
 echo "########################find /usr/local/lib###############################"
 cat /etc/ld.so.conf.d/* |grep /usr/local/lib
